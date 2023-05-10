@@ -6,9 +6,8 @@ namespace _1670_ASM2.Models
     {
         [Key]
         public int Id { get; set; }
-        [Required]
+        
         public string Name { get; set; }
-        [Required]
         public string Bio { get; set; }
         //Relationships
         public List<Book> Books { get; set; }

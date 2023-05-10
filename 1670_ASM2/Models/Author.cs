@@ -7,17 +7,13 @@ namespace _1670_ASM2.Models
     {
         [Key]
         public int Id { get; set; }
-        [Required]
+       
         public string FullName { get; set; }
-        [Required]
+       
         public string Bio { get; set; }
 
         //relationsips
         public List<Book_Author> Books_Authors { get; set; }
 
-        //Book
-        public int BookId { get; set; }
-        [ForeignKey("BookId")]
-        public Book Book { get; set; }
     }
 }

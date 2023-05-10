@@ -2,5 +2,12 @@
 {
     public enum BookGenre
     {
+        Adventure = 1,
+        Comic,
+        Mystery,
+        Fantasy,
+        Historical,
+        Horror,
+        SciFi
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using _1670_ASM2.Data;
+using System.ComponentModel.DataAnnotations;
 
 namespace _1670_ASM2.Models
 {
@@ -18,6 +19,9 @@ namespace _1670_ASM2.Models
         public float Price { get; set; }
         [Required]
         public string Author { get; set; }
+
+        //Relationships
+        public List<Book_Author> Books_Authors { get; set; }
 
     }
 }

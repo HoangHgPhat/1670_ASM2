@@ -9,7 +9,7 @@ namespace _1670_ASM2.Models
         public int Id { get; set; }
         [Required] public string BookCoverURL { get; set; }
         [Required]
-        public string Genre { get; set; }
+        public BookGenre Genre { get; set; }
         [Required] 
         public string Title { get; set; }
         [Required]

@@ -22,9 +22,8 @@ namespace _1670_ASM2.Controllers
         // GET: Books
         public async Task<IActionResult> Index()
         {
-              return _context.Books != null ? 
-                          View(await _context.Books.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Books'  is null.");
+              var allBooks = await _context.Books.ToListAsync();
+               return View();
         }
 
         // GET: Books/Details/5
@@ -49,6 +48,7 @@ namespace _1670_ASM2.Controllers
         public IActionResult Create()
         {
             return View();
+            
         }
 
         // POST: Books/Create

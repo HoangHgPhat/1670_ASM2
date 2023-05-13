@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace _1670_ASM2.Models
 {
-    public class Book
+    public class Book 
     {
         [Key]
         public int Id { get; set; }
@@ -14,8 +14,7 @@ namespace _1670_ASM2.Models
         public BookGenre Genre { get; set; } 
         public string Title { get; set; }
         public string Description { get; set; }
-        public float Price { get; set; }
-        public string Author { get; set; }
+        public Double Price { get; set; }
 
         //Relationships
         public List<Book_Author> Books_Authors { get; set; }
